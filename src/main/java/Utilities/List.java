@@ -1,24 +1,21 @@
 package Utilities;
 
 import com.sun.org.apache.xpath.internal.WhitespaceStrippingElementMatcher;
-
+import Utilities.ListNode;
 /**
  * Created by Administrator on 2020/8/29.
  */
-class ListNode{
-    int m_nValue;
-    ListNode m_pNext;
-}
+
 
 public class List {
-    static ListNode CreateListNode(int value){
+    public static ListNode CreateListNode(int value){
         ListNode pNode = new ListNode();
         pNode.m_nValue = value;
         pNode.m_pNext = null;
         return pNode;
     }
 
-    static void ConnectListNodes(ListNode pCurrent, ListNode pNext){
+    public static void ConnectListNodes(ListNode pCurrent, ListNode pNext){
         if (pCurrent == null){
             System.out.println("Error to connect two nodes");
             return;
@@ -26,7 +23,7 @@ public class List {
         pCurrent.m_pNext = pNext;
     }
 
-    static void PrintListNode(ListNode pNode){
+    public static void PrintListNode(ListNode pNode){
         if(pNode == null){
             System.out.println("The node is null");
         }
@@ -34,7 +31,7 @@ public class List {
             System.out.println("The key in node is "+ pNode.m_nValue);
         }
     }
-    static void PrintList(ListNode pHead){
+    public static void PrintList(ListNode pHead){
         System.out.println("PrintList starts");
 
         ListNode pNode = pHead;
@@ -45,7 +42,7 @@ public class List {
         System.out.println("PrintList ends");
     }
 
-    static void DestoryList(ListNode pHead){
+    public static void DestoryList(ListNode pHead){
         ListNode pNode = pHead;
         ListNode tempNode =  pHead;
 
@@ -56,7 +53,7 @@ public class List {
         }
     }
 
-    static void AddToTail(ListNode pHead, int value){
+    public static void AddToTail(ListNode pHead, int value){
         ListNode pNew = new ListNode();
         pNew.m_nValue = value;
         pNew.m_pNext = null;
@@ -73,7 +70,7 @@ public class List {
         }
     }
 
-    static void RemoveNode(ListNode pHead, int value){
+    public static void RemoveNode(ListNode pHead, int value){
 
         if(pHead == null){
             return;

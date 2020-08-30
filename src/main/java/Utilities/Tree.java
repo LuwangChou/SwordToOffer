@@ -8,10 +8,7 @@ import java.util.Vector;
 /**
  * Created by Administrator on 2020/8/29.
  */
-class TreeNode{
-    int m_nValue;
-    Vector<TreeNode> m_vChildren;
-}
+
 public class Tree {
 
     static TreeNode CreateTreeNode(int value){
@@ -33,7 +30,7 @@ public class Tree {
     }
 
 
-    static void PrintTree(TreeNode pRoot){
+    public static void PrintTree(TreeNode pRoot){
         PrintTreeNode(pRoot);
         if (pRoot != null){
             Iterator<TreeNode> iterator = pRoot.m_vChildren.iterator();

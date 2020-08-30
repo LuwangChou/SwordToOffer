@@ -7,6 +7,21 @@ package singleton;
 // 题目：设计一个类，我们只能生成该类的一个实例。
 //单例模式的5种实现
 public class Singleton {
+    public Singleton(){
+        System.out.println("Singleton Start");
+        singleton01 = Singleton01.getInstance();
+        singleton02 = Singleton02.getInstance();
+        singleton03 = Singleton03.getInstance();
+        singleton04 = Singleton04.getInstance();
+        singleton05 = Singleton05.getInstance();
+        System.out.println("Singleton End");
+    }
+
+    public Singleton01 singleton01;
+    public Singleton02 singleton02;
+    public Singleton03 singleton03;
+    public Singleton04 singleton04;
+    public Singleton05 singleton05;
 
 }
 

@@ -1,19 +1,14 @@
 package Utilities;
-
+import Utilities.BinaryTreeNode;
 import com.sun.deploy.security.DeployKeyStore;
 import sun.security.krb5.internal.crypto.Des;
 
 /**
  * Created by Administrator on 2020/8/29.
  */
-class BinaryTreeNode{
-    int m_nValue;
-    BinaryTreeNode m_pLeft;
-    BinaryTreeNode m_pRight;
-}
 
 public class BinaryTree {
-    static BinaryTreeNode CreateBinaryTreeNode(int value){
+    public static BinaryTreeNode CreateBinaryTreeNode(int value){
         BinaryTreeNode pNode = new BinaryTreeNode();
         pNode.m_nValue = value;
         pNode.m_pLeft = null;
@@ -21,14 +16,14 @@ public class BinaryTree {
         return pNode;
     }
 
-    static void ConnectTreeNodes(BinaryTreeNode pParent, BinaryTreeNode pLeft, BinaryTreeNode pRight){
+    public static void ConnectTreeNodes(BinaryTreeNode pParent, BinaryTreeNode pLeft, BinaryTreeNode pRight){
         if(pParent != null){
             pParent.m_pLeft = pLeft;
             pParent.m_pRight = pRight;
         }
     }
 
-    static void PrintTreeNode(BinaryTreeNode pNode){
+    public static void PrintTreeNode(BinaryTreeNode pNode){
         if( pNode != null){
             System.out.println("value of this node is:"+pNode.m_nValue);
             if (pNode.m_pLeft != null) {
@@ -47,7 +42,7 @@ public class BinaryTree {
         }
     }
 
-    static void PrintTree(BinaryTreeNode pRoot){
+    public static void PrintTree(BinaryTreeNode pRoot){
         PrintTreeNode(pRoot);
         if(pRoot != null){
             if(pRoot.m_pLeft != null) {
@@ -60,7 +55,7 @@ public class BinaryTree {
     }
 
 
-    static void DestroyTree(BinaryTreeNode pRoot){
+    public static void DestroyTree(BinaryTreeNode pRoot){
         if(pRoot != null){
             BinaryTreeNode pLeft = pRoot.m_pLeft;
             BinaryTreeNode pRight = pRoot.m_pRight;
