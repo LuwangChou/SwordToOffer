@@ -2,8 +2,12 @@ import assignmentoperator.AssignmentOperator;
 import constructbinarytree.ConstructBinaryTree;
 import duplicationinarray.DuplicationInArray;
 import duplicationinarray.DuplicationInArrayNoEdit;
+import fibonacci.Fibonacci;
 import findInpartiallysortedmatrix.FindInPartiallySortedMatrix;
+import minnumberinrotatedarray.MinNumberInRotatedArray;
+import nextnodeinbinarytrees.NextNodeInBinaryTrees;
 import printlistinreversedorder.PrintListInReversedOrder;
+import queuewithtwostacks.QueueWithTwoStacks;
 import replacespaces.ReplaceSpaces;
 import singleton.Singleton;
 
@@ -32,7 +36,20 @@ public class Demo {
 //        PrintListInReversedOrder printListInReversedOrder = new PrintListInReversedOrder();
 //        printListInReversedOrder.executeTest();
         //07
-        ConstructBinaryTree constructBinaryTree = new ConstructBinaryTree();
-        constructBinaryTree.executeTest();
+//        ConstructBinaryTree constructBinaryTree = new ConstructBinaryTree();
+//        constructBinaryTree.executeTest();
+        //08
+//        NextNodeInBinaryTrees nextNodeInBinaryTrees = new NextNodeInBinaryTrees();
+//        nextNodeInBinaryTrees.executeTest();
+        //09
+//        QueueWithTwoStacks queueWithTwoStacks = new QueueWithTwoStacks();
+//        queueWithTwoStacks.executeTest();
+        //10
+//        Fibonacci fibonacci = new Fibonacci();
+//        fibonacci.executeTest();
+        //11
+//        MinNumberInRotatedArray minNumberInRotatedArray = new MinNumberInRotatedArray();
+//        minNumberInRotatedArray.executeTest();
+
     }
 }
