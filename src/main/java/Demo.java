@@ -1,15 +1,19 @@
 import assignmentoperator.AssignmentOperator;
 import constructbinarytree.ConstructBinaryTree;
+import cuttingrope.CuttingRope;
 import duplicationinarray.DuplicationInArray;
 import duplicationinarray.DuplicationInArrayNoEdit;
 import fibonacci.Fibonacci;
 import findInpartiallysortedmatrix.FindInPartiallySortedMatrix;
 import minnumberinrotatedarray.MinNumberInRotatedArray;
 import nextnodeinbinarytrees.NextNodeInBinaryTrees;
+import numberof1.NumberOfOne;
 import printlistinreversedorder.PrintListInReversedOrder;
 import queuewithtwostacks.QueueWithTwoStacks;
 import replacespaces.ReplaceSpaces;
+import robotmove.RobotMove;
 import singleton.Singleton;
+import stringpathinmatrix.StringPathInMatrix;
 
 /**
  * Created by Administrator on 2020/8/29.
@@ -50,6 +54,19 @@ public class Demo {
         //11
 //        MinNumberInRotatedArray minNumberInRotatedArray = new MinNumberInRotatedArray();
 //        minNumberInRotatedArray.executeTest();
+
+        //12
+//        StringPathInMatrix stringPathInMatrix = new StringPathInMatrix();
+//        stringPathInMatrix.executeTest();
+        //13
+//        RobotMove robotMove = new RobotMove();
+//        robotMove.executeTest();
+        //14
+//        CuttingRope cuttingRope = new CuttingRope();
+//        cuttingRope.executeTest();
+        //15
+        NumberOfOne numberOfOne = new NumberOfOne();
+        numberOfOne.executeTest();
 
     }
 }
